@@ -1,15 +1,31 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
-.input{
+body{
+    background-color: #272727;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    width: max-content;
+}
+
+.inputs{
     display: flex;
     flex-direction: column;
     width: 300px;
+    font-size: 1.2em;
+}
+
+input{
+    color: black;
 }
 
 main{
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +38,5 @@ label{
 button{
     margin-top: 25px;
     font-weight: bolder;
+    color: black;
 }
