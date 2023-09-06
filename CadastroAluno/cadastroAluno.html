@@ -11,78 +11,91 @@
 
     <main>
         <form method="post">
-            <fieldset>
-                <legend>Cadastro de Aluno</legend>
+            
+               
 
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                
+                    <fieldset class="infoBasica">
+                        <legend>Informações Básicas</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" required>
+                        <label for="nasc">Data de Nascimento</label>
+                        <input type="date" id="nasc" min="2000-01-01" max="2017-12-31" required>
+                        <label for="adress">Endereço</label>
+                        <input type="text" id="adress">
+                        <label for="mae">Nome da Mãe</label>
+                        <input type="text" id="mae">
+                        <label for="pai">Nome do Pai</label>
+                        <input type="text" id="pai">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <label for="tel">Telefone</label>
+                        <input type="tel" id="tel" required>
+                    </fieldset>
+                
 
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" id="sobrenome">
 
-                <label for="nasc">Data de Nascimento</label>
-                <input type="date" id="nasc" min="2000-01-01" max="2017-12-31">
+                
+                    <fieldset class="infoAdicional">
+                        <legend>Informações Adicionais</legend>
+                        
+                        <label for="serie">Série</label>
+                        <input type="number" id="serie" min="1" max="9" required>
 
-                <label for="adress">Endereço</label>
-                <input type="text" id="adress">
+                        <label for="sexo">Sexo</label>
+                        <div class="checkSexo">
+                            <input type="radio" name="sexo" id="fem" value="F" checked>
+                            <label for="fem" id="fem">Feminino</label>
+                            <input type="radio" name="sexo" id="masc" value="M">
+                            <label for="masc" id="masc">Masculino</label>
+                        </div>
 
-                <label for="mae">Nome da Mãe</label>
-                <input type="text" id="mae">
+                        <label for="necessidade">Necessidades Especiais</label>
 
-                <label for="pai">Nome do Pai</label>
-                <input type="text" id="pai">
-
-                <label for="email">Email</label>
-                <input type="email" id="email">
-
-                <label for="tel">Telefone</label>
-                <input type="tel" id="tel">
-
-                <label for="serie">Série</label>
-                <input type="number" id="serie" min="1" max="9">
-
-                <label for="sexo">Sexo</label>
-
-                <input type="radio" name="sexo" id="fem" value="F">
-                <label for="fem" id="fem">Feminino</label>
-
-                <input type="radio" name="sexo" id="masc" value="M">
-                <label for="masc" id="masc">Masculino</label>
-
-                <label for="necessidade">Necessidades Especiais</label>
-
-                <input type="checkbox" id="auditiva" value="auditiva">
-                <label for="auditiva">Deficiência Auditiva</label>
-
-                <input type="checkbox" id="motora" value="motora">
-                <label for="motora">Deficiência Motora</label>
-
-                <input type="checkbox" id="visual" value="visual">
-                <label for="visual">Deficiência Visual</label>
-
-                <input type="checkbox" id="paralisia" value="paralisiaCerebral">
-                <label for="paralisia">Paralisia Cerebral</label>
-
-                <input type="checkbox" id="autismo" value="autismo">
-                <label for="autismo">Perturbação do Espectro Autista</label>
-
-                <input type="checkbox" id="foro" value="foro">
-                <label for="foro">Perturbação do Foro Psicológico</label>
-
-                <input type="checkbox" id="aprendizagem" value="aprendizagem">
-                <label for="aprendizagem">Pertubações de aprendizagem</label>
-
-                <input type="checkbox" id="habilidades" value="habilidades">
-                <label for="habilidades">Altas Habilidades</label>
-
-                <div class="formActions">
-                    <button type="submit">Salvar</button>
-
-                    <button type="reset">Limpar Tela</button>
-                </div>
-
-            </fieldset>
+                        <div class="necessidadesEspeciais">
+                            <div class="auditiva">
+                                <input type="checkbox" id="auditiva" value="auditiva">
+                                <label for="auditiva">Deficiência Auditiva</label>
+                            </div>
+                            <div class="motora">
+                                <input type="checkbox" id="motora" value="motora">
+                                <label for="motora">Deficiência Motora</label>
+                            </div>
+                            <div class="visual">
+                                <input type="checkbox" id="visual" value="visual">
+                                <label for="visual">Deficiência Visual</label>
+                            </div>
+                            <div class="paralisia">
+                                <input type="checkbox" id="paralisia" value="paralisiaCerebral">
+                                <label for="paralisia">Paralisia Cerebral</label>
+                            </div>
+                            <div class="autismo">
+                                <input type="checkbox" id="autismo" value="autismo">
+                                <label for="autismo">Perturbação do Espectro Autista</label>
+                            </div>
+                            <div class="foro">
+                                <input type="checkbox" id="foro" value="foro">
+                                <label for="foro">Perturbação do Foro Psicológico</label>
+                            </div>
+                            <div class="aprendizagem">
+                                <input type="checkbox" id="aprendizagem" value="aprendizagem">
+                                <label for="aprendizagem">Pertubações de aprendizagem</label>
+                            </div>
+                            <div class="habilidades">
+                                <input type="checkbox" id="habilidades" value="habilidades">
+                                <label for="habilidades">Altas Habilidades</label>
+                            </div>
+                        </div>
+                    </fieldset>
         </form>
+
+        <div class="formActions">
+            <button type="submit" class="salvar">Salvar</button>
+
+            <button type="reset">Limpar Tela</button>
+        </div>
     </main>
     
 </body>

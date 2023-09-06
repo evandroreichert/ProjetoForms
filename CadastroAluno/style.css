@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e0e0e0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+    margin: auto;
+}
+
+form{
+    display: grid;
+    grid-template-columns:auto auto;
+    height: 80%;
+    width: 80%;
+    gap: 30px;
+    text-align: left;
+}
+
+.infoBasica, .infoAdicional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoAdicional{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.checkSexo{
+    display: flex;
+}
+
+label{
+    width: 45%;
+    text-align: left;
+}
+
+input#fem, input#masc{
+    margin: 0 5px;
+}
+
+label#fem{
+    margin-right: 10px;
+}
+
+.infoBasica input, .checkSexo{
+    width: 45%;
+}
+
+.necessidadesEspeciais{
+    width: 45%;
+    display: grid;
+    align-items: center;
+}
+
+button{
+    margin: 10px 25px;
+    width: 70%;
+    font-weight: bolder;
+    background-color: #bebebe;
+    color: #272727;
+    font-size: 1.2em;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
