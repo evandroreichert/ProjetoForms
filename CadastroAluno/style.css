@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');   /*Google Fonts*/
 
-*{
-    font-family: 'Poppins', sans-serif;
+*{                                                  /*Configurações Globais*/
+    font-family: 'Poppins', sans-serif;             
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,75 +9,60 @@
 
 body{
     background-color: #e0e0e0;
-    height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
-main{
-    height: 90vh;
-    width: 90vw;
+main{                                                          
+    width: 45vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 15px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                  -20px -20px 60px #ffffff;
-    margin: auto;
+    padding: 30px;
 }
 
-form{
-    display: grid;
-    grid-template-columns:auto auto;
-    height: 80%;
-    width: 80%;
-    gap: 30px;
-    text-align: left;
-}
-
-.infoBasica, .infoAdicional{
+fieldset{
+    border: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.infoAdicional{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.checkSexo{
-    display: flex;
 }
 
 label{
-    width: 45%;
-    text-align: left;
+    margin-top: 15px;
+    font-size: 1.1em;
 }
 
-input#fem, input#masc{
-    margin: 0 5px;
+input{
+    padding-left: 3px;
 }
 
-label#fem{
-    margin-right: 10px;
+form h1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.infoBasica input, .checkSexo{
-    width: 45%;
+label#fem{                          /* Espaçamento entre Fem e Masc */
+    margin-right: 15px;
 }
 
-.necessidadesEspeciais{
-    width: 45%;
-    display: grid;
-    align-items: center;
+.necessidadestitle{
+    font-weight: bold;
+    margin: 20px 0 10px 0;
 }
+
+.necessidadesEspeciais input{
+    margin-bottom: 13px;
+}
+
+/* Botões / Hover dos Botões */
 
 button{
     margin: 10px 25px;
@@ -88,5 +73,21 @@ button{
     font-size: 1.2em;
     padding: 13px;
     border-radius: 8px;
+    border: none;
     cursor: pointer;
+}
+
+.salvar{
+    margin-top: 40px;
+}
+
+.salvar:hover{
+    background-color: white;
+    transition: .6s ease;
+}
+
+.resetar:hover{
+    background-color: #6f161a;
+    color: white;
+    transition: .6s ease;
 }
